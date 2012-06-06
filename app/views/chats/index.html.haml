@@ -1,8 +1,10 @@
-%h1 Badass Chat with Faye!
+%h1 Chat
 
-%ul.chat_message_stream
+%ul#chat_message_stream
   = render @chats
 
 
-
-= render 'form'
+.chat_form
+  = render 'form'
+  
+= subscribe_to "/chats/new"

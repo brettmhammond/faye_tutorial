@@ -1,9 +1,9 @@
-= form_for Chat.new do |f|
+= form_for Chat.new, :remote => true do |f|
   .field
-    = f.label :username
-    = f.text_field :username
+    = f.label :username, 'Who Dat?'
+    = f.text_field :username, :value => @username
   .field
-    = f.label :message
-    = f.text_field :message
+    = f.label :message, 'Speak!'
+    = f.text_field :message, :id => "new_chat_message_input"
   .actions
-    = f.submit 'Push that Shiz'
+    = f.submit 'Push that Shiz', :class => 'btn btn-primary'

@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Faye Tutorial
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Bad-Ass Faye
+          .nav-collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Some Bad-ass Link
+              %li
+                %a{:href => "#about"} Not so cool link
+              %li
+                %a{:href => "#contact"} Meh...
+          / /.nav-collapse
+    .container
+      = yield
