@@ -1,0 +1,8 @@
+%li
+  .username
+    = chat.username
+    %span 
+      = chat.created_at.strftime("%H:%M")
+      
+  .message
+    = chat.message

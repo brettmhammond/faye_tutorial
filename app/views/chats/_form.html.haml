@@ -1,0 +1,9 @@
+= form_for Chat.new do |f|
+  .field
+    = f.label :username
+    = f.text_field :username
+  .field
+    = f.label :message
+    = f.text_field :message
+  .actions
+    = f.submit 'Push that Shiz'

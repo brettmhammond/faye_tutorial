@@ -1,4 +1,6 @@
 FayeTutorial::Application.routes.draw do
+  resources :chats
+  root :to => 'chats#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
