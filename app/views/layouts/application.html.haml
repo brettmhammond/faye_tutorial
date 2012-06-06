@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Faye Tutorial
+    %title Bad-Ass Faye Tutorial
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -10,18 +10,17 @@
       .navbar-inner
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
           %a.brand{:href => "#"} Bad-Ass Faye
-          .nav-collapse
-            %ul.nav
-              %li.active
-                %a{:href => "#"} Some Bad-ass Link
-              %li
-                %a{:href => "#about"} Not so cool link
-              %li
-                %a{:href => "#contact"} Meh...
-          / /.nav-collapse
+          %ul.nav.pull-right
+            %li.active
+              %a{:href => "#"} Some Bad-ass Link
+            %li
+              %a{:href => "#"} Not so cool link
+            %li
+              %a{:href => "#"} Meh...
     .container
       = yield
+      %hr
+      %footer
+        %center
+          Copyright 1986 Bad-Ass Faye LLC | Bad-Ass Faye with Pizazz

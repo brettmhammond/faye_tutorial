@@ -1,5 +1,6 @@
 class ChatsController < ApplicationController
 
+  # Load up all of the chat messages and set a default user
   def index
     @chats = Chat.all
     
@@ -12,6 +13,8 @@ class ChatsController < ApplicationController
     
   end
 
+
+  # Create and save the chat message also set the username to session
   def create
     
     # Cheap hack to save the username to session
