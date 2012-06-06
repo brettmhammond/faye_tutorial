@@ -28,6 +28,12 @@ Gems being used
     gem 'haml-rails'
     
 
+Starting Faye/Private_Pub
+---------
+
+    rackup private_pub.ru -s thin -E production
+
+
 Links
 ---------
 [Faye Website - http://faye.jcoglan.com/][1]
