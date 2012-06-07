@@ -1,11 +1,14 @@
 <% publish_to "/chats/new" do %>
+  
   chat_stream = $("ul#chat_message_stream")
-  chat_stream.append("<%= escape_javascript render(@chat) %>")
+  
+  
+  chat_stream.append("<%= j render(@chat) %>")
 
 
   last_chat_message = $("#chat_message_stream li").last()
-
   chat_stream.animate({scrollTop: last_chat_message.height() - last_chat_message.scrollHeight}, 1)
   chat_stream.animate({scrollTop: last_chat_message.offset().top - 30}, 1)
+  
 <% end %>
 $("#new_chat_message_input").val('').focus()

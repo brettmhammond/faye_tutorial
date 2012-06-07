@@ -7,4 +7,14 @@
 .chat_form
   = render 'form'
   
+
+-# Uses the Private Pub gem to allow us to easily subscribe to a Faye Channel
+-# 
+-#  EXAMPLES:
+-# 
+-#    = subscribe_to "any_channel_name_can_be_here"
+-#    = subscribe_to "/controller/method"
+-# 
+-# We are just using the basic controller/method idea
+
 = subscribe_to "/chats/new"
